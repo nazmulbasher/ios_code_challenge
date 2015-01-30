@@ -1,0 +1,15 @@
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "1J4-Ll-S6v"; */
+"1J4-Ll-S6v.title" = "Item";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "UD6-8x-IaB"; */
+"UD6-8x-IaB.text" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "Action Button"; ObjectID = "jFI-E1-ny5"; */
+"jFI-E1-ny5.normalTitle" = "German Action Button";
+
+/* Class = "IBUITabBarItem"; badgeValue = "13"; ObjectID = "wFH-6F-mdB"; */
+"wFH-6F-mdB.badgeValue" = "13";
+
+/* Class = "IBUITabBarItem"; title = "Badge"; ObjectID = "wFH-6F-mdB"; */
+"wFH-6F-mdB.title" = "Badge";
