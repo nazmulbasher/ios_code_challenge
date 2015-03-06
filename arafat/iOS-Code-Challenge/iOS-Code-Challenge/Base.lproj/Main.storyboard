@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FNMasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-Qb-nKU">
+                                <rect key="frame" x="263" y="263" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="DjL-lo-WrX"/>
+                                    <constraint firstAttribute="width" constant="75" id="N7a-4p-Lon"/>
+                                </constraints>
+                                <state key="normal" title="Click Me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W1i-SW-P8F" kind="presentation" id="Khi-jT-xlj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uc1-Qb-nKU" secondAttribute="centerX" id="6gN-7M-8Ua"/>
+                            <constraint firstAttribute="centerY" secondItem="uc1-Qb-nKU" secondAttribute="centerY" id="Uu5-ad-Ccu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Text Field View Controller-->
+        <scene sceneID="3ho-jG-Y9g">
+            <objects>
+                <viewController id="W1i-SW-P8F" customClass="FNTextFieldViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cp4-Hd-89u"/>
+                        <viewControllerLayoutGuide type="bottom" id="yol-ou-fcN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ldk-9y-lX6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTM-HI-nIT">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="W1i-SW-P8F" id="ouu-nC-1uQ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uTM-HI-nIT" firstAttribute="trailing" secondItem="ldk-9y-lX6" secondAttribute="trailingMargin" id="0TV-Eu-nG9"/>
+                            <constraint firstItem="uTM-HI-nIT" firstAttribute="leading" secondItem="ldk-9y-lX6" secondAttribute="leadingMargin" id="hgY-XU-vfq"/>
+                            <constraint firstAttribute="centerY" secondItem="uTM-HI-nIT" secondAttribute="centerY" id="xba-dy-lhE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="uTM-HI-nIT" id="M0C-oT-bPv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5q3-gn-D2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224" y="221"/>
+        </scene>
+    </scenes>
+</document>
